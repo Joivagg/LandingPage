@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <title>Landing Portfolio</title>
+  <title>Landing Portfolio</title>
+  <meta charset="utf-8">
 </head>
 
 <body>
-    <h1>HTML Portfolio: Basic Landing Page</h1>
-    <h2>Some interesting fact...</h2>
-    <h3>Objective:</h3>
-    <p>The objective of this page is to show off my skills with HTML, CSS and JS</p>
+  <!-- Falta el menú de navegación y el footer -->
+  <main>
+    <h1>Portafolio HTML: Basic Landing Page</h1>
+    <section>
+      <h2>Algo interesante...</h2>
+      <figure>
+        <img src="img/tremendo.png" alt="Imagen del videojuego Valorant. A nivel más técnico, el Chamber de mi equipo está flameando al Yoru enemigo por el chat de texto por tirar flash y tp, a lo que yo, también como Yoru, digo que a mí sí me funciona, a lo que el Chamber aliado responde en el canal del equipo que me calle porque está flameando al Yoru enemigo. (Sé que el alt no se usa para esto, pero queda gracioso. Igual esto se irá luego... probablemente)" width="480" height="320">
+        <figcaption style="color:crimson">Tremenda <em>data</em> bro</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h3>Lenguajes de Programación:</h3>
+      <p style="color:lime">El objetivo de esta página web es demostrar mis skills con:</p>
+      <ul>
+        <li><strong>HTML</strong></li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Características:</h3>
+      <p style="color:springgreen">Quiero incorporar por orden de prioridad:</p>
+      <ol>
+        <li><strong>Atributos</strong></li>
+        <li>Habilidades</li>
+        <li>Potencia</li>
+      </ol>
+    </section>
+    <section>
+      <h3>Contacto:</h3>
+      <form action="#">
+        <input type="email" name="emailUsuario" placeholder="Email del usuario" required>
+        <fieldset>
+          <legend>Selecciona característica:</legend>
+          <label for="atributos">Atributos</label>
+          <input type="radio" id="atributos" name="caracteristica" value="atributos" checked>
+          <label for="habilidades">Habilidades</label>
+          <input type="radio" id="habilidades" name ="caracteristica" value="habilidades">
+        </fieldset>
+        <fieldset></fieldset>
+          <legend>Selecciona frente:</legend>
+          <label for="backend">Back</label>
+          <input type="checkbox" id="backend" name="frente" value="backend" checked>
+          <label for="frontend">Front</label>
+          <input type="checkbox" id="frontend" name ="frente" value="frontend">
+          <label for="basedatos">DB</label>
+          <input type="checkbox" id="basedatos" name ="frente" value="basedatos">
+        </fieldset>
+        <button type="Submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>2024 / <a href="https://github.com/Joivagg" target="_blank">GitHub</a></p>
+  </footer>
 </body>
 
 </html>
