@@ -11,28 +11,28 @@
 <body>
   <!-- Falta el menú de navegación y el footer -->
   <main>
-    <h1 id="tituloprincipal">Portafolio HTML: Basic Landing Page</h1>
+    <h1 id="maintitle">Portafolio HTML: Basic Landing Page</h1>
     <hr />
     <section id="banner">
-      <h2 class="interesante">Algo interesante...</h2>
+      <h2 class="interintro">Algo interesante...</h2>
       <figure>
-        <img src="img/tremendo.png" alt="Imagen del videojuego Valorant. A nivel más técnico, el Chamber de mi equipo está flameando al Yoru enemigo por el chat de texto por tirar flash y tp, a lo que yo, también como Yoru, digo que a mí sí me funciona, a lo que el Chamber aliado responde en el canal del equipo que me calle porque está flameando al Yoru enemigo. (Sé que el alt no se usa para esto, pero queda gracioso. Igual esto se irá luego... probablemente)" width="480" height="320">
+        <img src="img/tremendo.png" alt="Imagen del videojuego Valorant con una conversación graciosa" width="480" height="320">
         <figcaption>Tremenda <em>data</em> bro</figcaption>
       </figure>
-      <article class="tipado">
-        <p class="elemental">Bicho</p><p class="rastro">80%</p>
+      <article class="typing">
+        <p class="elementname">Bicho</p><p class="trace">80%</p>
       </article>
-      <article class="tipado">
-        <p class="elemental">Dragón</p><p class="rastro">20%</p>
+      <article class="typing">
+        <p class="elementname">Dragón</p><p class="trace">20%</p>
       </article>
-      <article class="tipado">
-        <p class="elemental">Planta</p><p class="rastro">60%</p>
+      <article class="typing">
+        <p class="elementname">Planta</p><p class="trace">60%</p>
       </article>
-      <article class="tipado">
-        <p class="elemental">Fuego</p><p class="rastro">40%</p>
+      <article class="typing">
+        <p class="elementname">Fuego</p><p class="trace">40%</p>
       </article>
     </section>
-    <section id="listas">
+    <section id="languagelist">
       <h3>Lenguajes de Programación:</h3>
       <p>El objetivo de esta página web es demostrar mis skills con:</p>
       <ul>
@@ -41,40 +41,62 @@
         <li>JavaScript</li>
       </ul>
     </section>
-    <section id="viñeta">
+    <section id="charlist">
       <h3>Características:</h3>
-      <p class="titulocaracter">Quiero incorporar por orden de prioridad:</p>
+      <p class="chartitle">Quiero incorporar por orden de prioridad:</p>
       <ol>
         <li><strong>Atributos</strong></li>
         <li>Habilidades</li>
         <li>Potencia</li>
       </ol>
     </section>
-    <section id="contacto">
+    <section id="colorcheck">
+      <div class="container">
+        <div class="flag startcolor yellow">
+          <div class="pushbox startcolor">
+          </div> 
+          <div class="glass startcolor">
+          </div>
+        </div>
+        <div class="flag blue">
+          <div class="pushbox">
+          </div> 
+          <div class="glass">
+          </div>
+        </div>
+        <div class="flag red">
+          <div class="pushbox">
+          </div> 
+          <div class="glass">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactform">
       <h3>Contacto:</h3>
       <form action="#">
-        <input type="email" name="emailUsuario" placeholder="Email del usuario" required />
+        <input type="email" name="userEmail" placeholder="Email del usuario" required />
         <fieldset>
           <legend>Selecciona característica:</legend>
-          <label for="atributos">Atributos</label>
-          <input type="radio" id="atributos" name="caracteristica" value="atributos" checked />
-          <label for="habilidades">Habilidades</label>
-          <input type="radio" id="habilidades" name ="caracteristica" value="habilidades" />
+          <label for="attributes">Atributos</label>
+          <input type="radio" id="attributes" name="characteristic" value="attributes" checked />
+          <label for="skills">Habilidades</label>
+          <input type="radio" id="skills" name ="characteristic" value="skills" />
         </fieldset>
         <fieldset>
-          <legend>Selecciona frente:</legend>
+          <legend>Selecciona área:</legend>
           <label for="backend">Back</label>
-          <input type="checkbox" id="backend" name="frente" value="backend" checked />
+          <input type="checkbox" id="backend" name="area" value="backend" checked />
           <label for="frontend">Front</label>
-          <input type="checkbox" id="frontend" name ="frente" value="frontend" />
-          <label for="basedatos">DB</label>
-          <input type="checkbox" id="basedatos" name ="frente" value="basedatos" />
+          <input type="checkbox" id="frontend" name ="area" value="frontend" />
+          <label for="database">DB</label>
+          <input type="checkbox" id="database" name ="area" value="database" />
         </fieldset>
         <button type="Submit">Enviar</button>
       </form>
     </section>
   </main>
-  <hr class="separadorpie"/>
+  <hr class="footerbreak"/>
   <footer>
     <p>2024 / <a href="https://github.com/Joivagg" target="_blank">GitHub</a></p>
   </footer>
