@@ -51,6 +51,7 @@
       </ol>
     </section>
     <section id="colorcheck">
+      <h3>Esquema de color</h3>
       <div class="container">
         <div class="flag startcolor yellow">
           <div class="pushbox startcolor">
@@ -71,6 +72,58 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="registerform">
+      <h3>Formulario de Registro</h3>
+      <p class="registerintro">Bienvenido, rellene los siguientes campos y haga clic en el botón de Registrar</p>
+      <form action="#" method="post">
+        <fieldset class="blockinput">
+          <label for="firstname">Nombres:</label>
+          <input type="text" id="firstname" name="firstnameinput" required />
+          <label for="lastname">Apellidos:</label>
+          <input type="text" id="lastname" name="lastnameinput" required />
+          <label for="regemail">Correo electrónico:</label>
+          <input type="email" id="regemail" name="regemailinput" required />
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="passwordinput" required pattern="[a-z0-5]{8,}" />
+        </fieldset>
+        <fieldset class="blockinput">
+          <legend>Selecciona el atributo a potenciar:</legend>
+          <div class="inlineclose">
+            <input type="radio" id="strength" class="inlineclose" name="enhancer" />
+            <label for="strength">Físico</label>
+          </div>
+          <div class="inlineclose">
+            <input type="radio" id="mind" name="enhancer" />
+            <label for="mind">Mente</label>
+          </div>
+          <div class="inlineclose">
+            <input type="radio" id="spirit" name="enhancer" />
+            <label for="spirit">Espíritu</label>
+          </div>
+        </fieldset>
+        <fieldset class="blockinput">
+          <label for="profilepicture">Foto de perfil:</label>
+          <input type="file" id="profilepicture" name="profilepicinput" />
+          <label for="birthday">Fecha de nacimiento:</label>
+          <input type="date" id="birthday" name="birthdayinput" />
+          <label for="perk">Mejor cualidad:</label>
+          <select for="perk" name="perkselector">
+            <option value="cont">Motivación</option>
+            <option value="duel">Autosuficiencia</option>
+            <option value="init">Visión</option>
+            <option value="sent">Análisis</option>
+            <option value="flex">Adaptabilidad</option>
+          </select>
+          <label for="objective" name="objectivetext">Describe tus objetivos actuales:</label>
+          <textarea id="objective" cols="40" rows="4" placeholder="Por ejemplo, las razones por las que quieres mejorar"></textarea>
+        </fieldset>
+        <div class="inlineclose spacebelow">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent">Confirme su registro</label>
+        </div>
+        <input type="submit" value="Registrar" />
+      </form>
     </section>
     <section id="contactform">
       <h3>Contacto:</h3>
