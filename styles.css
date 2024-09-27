@@ -1,0 +1,141 @@
+/* Estilo de conjunto de elementos */
+body {
+  background-color: azure;
+  background-image: url(/img/maple.png);
+  font-family: monospace;
+  padding: 20px;
+}
+
+hr {
+  height: 5px;
+  background-color: coral;
+  border-color:bisque;
+}
+
+h1, h3 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 40px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  color: lime;
+}
+
+a {
+  color: firebrick;
+}
+
+a:visited {
+  color: navy;
+}
+
+a:hover {
+  color: peru;
+}
+
+a:active {
+  color: olive;
+}
+
+figcaption {
+  text-align: center;
+  color: crimson;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  background-color: khaki;
+}
+
+/* Estilo de elementos por clase */
+.interesante {
+  margin-bottom: 8px;
+}
+
+.elemental {
+  text-align: left;
+  width: 80%;
+}
+
+.rastro {
+  text-align: right;
+  width: 20%;
+}
+
+.tipado p {
+  display: inline-block;
+  color: goldenrod;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.titulocaracter {
+  color: springgreen;
+}
+
+.separadorpie {
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+/* Estilo de elementos por id */
+#tituloprincipal {
+  background-color: mediumspringgreen;
+  margin-bottom: -10px;
+}
+
+#banner {
+  width: 50%;
+  background-color: whitesmoke;
+  margin-left: auto;  
+  margin-right: auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+#listas {
+  width: 50%;
+  background-color: lightgoldenrodyellow;
+  margin-left: auto;  
+  margin-right: auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+#viñeta {
+  width: 50%;
+  background-color: thistle;
+  margin-left: auto;  
+  margin-right: auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+#contacto {
+  width: 50%;
+  background-color: moccasin;
+  margin-left: auto;  
+  margin-right: auto;
+  padding: 20px;
+  max-width: 800px;
+}

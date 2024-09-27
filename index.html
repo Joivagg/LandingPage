@@ -3,62 +3,78 @@
 
 <head>
   <title>Landing Portfolio</title>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <!-- Falta el menú de navegación y el footer -->
   <main>
-    <h1>Portafolio HTML: Basic Landing Page</h1>
-    <section>
-      <h2>Algo interesante...</h2>
+    <h1 id="tituloprincipal">Portafolio HTML: Basic Landing Page</h1>
+    <hr />
+    <section id="banner">
+      <h2 class="interesante">Algo interesante...</h2>
       <figure>
         <img src="img/tremendo.png" alt="Imagen del videojuego Valorant. A nivel más técnico, el Chamber de mi equipo está flameando al Yoru enemigo por el chat de texto por tirar flash y tp, a lo que yo, también como Yoru, digo que a mí sí me funciona, a lo que el Chamber aliado responde en el canal del equipo que me calle porque está flameando al Yoru enemigo. (Sé que el alt no se usa para esto, pero queda gracioso. Igual esto se irá luego... probablemente)" width="480" height="320">
-        <figcaption style="color:crimson">Tremenda <em>data</em> bro</figcaption>
+        <figcaption>Tremenda <em>data</em> bro</figcaption>
       </figure>
+      <article class="tipado">
+        <p class="elemental">Bicho</p><p class="rastro">80%</p>
+      </article>
+      <article class="tipado">
+        <p class="elemental">Dragón</p><p class="rastro">20%</p>
+      </article>
+      <article class="tipado">
+        <p class="elemental">Planta</p><p class="rastro">60%</p>
+      </article>
+      <article class="tipado">
+        <p class="elemental">Fuego</p><p class="rastro">40%</p>
+      </article>
     </section>
-    <section>
+    <section id="listas">
       <h3>Lenguajes de Programación:</h3>
-      <p style="color:lime">El objetivo de esta página web es demostrar mis skills con:</p>
+      <p>El objetivo de esta página web es demostrar mis skills con:</p>
       <ul>
         <li><strong>HTML</strong></li>
         <li>CSS</li>
         <li>JavaScript</li>
       </ul>
     </section>
-    <section>
+    <section id="viñeta">
       <h3>Características:</h3>
-      <p style="color:springgreen">Quiero incorporar por orden de prioridad:</p>
+      <p class="titulocaracter">Quiero incorporar por orden de prioridad:</p>
       <ol>
         <li><strong>Atributos</strong></li>
         <li>Habilidades</li>
         <li>Potencia</li>
       </ol>
     </section>
-    <section>
+    <section id="contacto">
       <h3>Contacto:</h3>
       <form action="#">
-        <input type="email" name="emailUsuario" placeholder="Email del usuario" required>
+        <input type="email" name="emailUsuario" placeholder="Email del usuario" required />
         <fieldset>
           <legend>Selecciona característica:</legend>
           <label for="atributos">Atributos</label>
-          <input type="radio" id="atributos" name="caracteristica" value="atributos" checked>
+          <input type="radio" id="atributos" name="caracteristica" value="atributos" checked />
           <label for="habilidades">Habilidades</label>
-          <input type="radio" id="habilidades" name ="caracteristica" value="habilidades">
+          <input type="radio" id="habilidades" name ="caracteristica" value="habilidades" />
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
           <legend>Selecciona frente:</legend>
           <label for="backend">Back</label>
-          <input type="checkbox" id="backend" name="frente" value="backend" checked>
+          <input type="checkbox" id="backend" name="frente" value="backend" checked />
           <label for="frontend">Front</label>
-          <input type="checkbox" id="frontend" name ="frente" value="frontend">
+          <input type="checkbox" id="frontend" name ="frente" value="frontend" />
           <label for="basedatos">DB</label>
-          <input type="checkbox" id="basedatos" name ="frente" value="basedatos">
+          <input type="checkbox" id="basedatos" name ="frente" value="basedatos" />
         </fieldset>
         <button type="Submit">Enviar</button>
       </form>
     </section>
   </main>
+  <hr class="separadorpie"/>
   <footer>
     <p>2024 / <a href="https://github.com/Joivagg" target="_blank">GitHub</a></p>
   </footer>
