@@ -139,6 +139,29 @@ footer {
   color: rgb(0, 255, 127);
 }
 
+.registerintro {
+  color: rgb(240, 181, 250);
+}
+
+.blockinput label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.inlineclose label {
+  display: inline-block;
+}
+
+.inlineclose input {
+  width: unset !important;
+  margin: 0 0.5em 0 0 !important;
+  vertical-align: middle;
+}
+
+.spacebelow {
+  margin: 5px 0;
+}
+
 .footerbreak {
   margin-top: 20px;
   margin-bottom: -20px;
@@ -184,6 +207,66 @@ footer {
   margin-right: auto;
   padding: 20px;
   max-width: 800px;
+}
+
+#registerform {
+  width: 50%;
+  height: 180vh;
+  background-color: #2a1c13;
+  color: #9bed17;
+  margin-left: auto;  
+  margin-right: auto;
+  padding: 20px;
+  max-width: 800px;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+#registerform h3, #registerform p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#registerform form {
+  margin: 0 auto;
+  max-width: 400px;
+  min-width: 300px;
+  width: 60vw;
+  padding: 0 0 2em 0;
+}
+
+#registerform fieldset {
+  border: 0;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+#registerform input, #registerform select, #registerform textarea {
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 2em;
+}
+
+#registerform input, #registerform textarea {
+  background-color: #190b02;
+  border: 1px solid #190b02;
+  color: #d5ecc1;
+}
+
+#registerform input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: rgb(127, 255, 0);
+  border-color: rgb(255, 69, 0);
+  color: rgb(51, 44, 98);
+  min-width: 300px;
+}
+
+#registerform input[type="file"] {
+  padding: 1px 2px;
 }
 
 #contactform {
